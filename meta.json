@@ -27,5 +27,5 @@
       "default": "MIT"
     }
   },
-  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install or yarn \n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install  or yarn\n  npm run dev{{/inPlace}} \n publish: npm run build && npm publish"
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install or yarn \n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install  or yarn\n  npm run dev{{/inPlace}}\n visit:http://localhost:8080/example/example.html \n publish: npm run build && npm publish"
 }
