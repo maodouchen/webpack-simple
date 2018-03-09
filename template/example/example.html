@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button type="button" @click="showMask">click</button>
+    <demo :show="show" v-on:click="clickMask"></demo>
+</div>
+<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+<script src="../dist/build.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+
+        data () {
+            return {
+                show: false
+            }
+        },
+
+        methods: {
+            showMask () {
+                this.show = true;
+            },
+
+            clickMask () {
+                alert('clickMask');
+                this.show = false;
+            }
+        }
+    });
+</script>
+</body>
+</html>
